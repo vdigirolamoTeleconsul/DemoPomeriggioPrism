@@ -9,6 +9,6 @@
     <StackLayout>
         <Label Text="{Binding Titolo}"></Label>
         <Label Text="{Binding Count}"></Label>
-        <Label Text="Prova build"></Label>
+        <Label Text="Prova build 2"></Label>
     </StackLayout>
 </ContentPage>
