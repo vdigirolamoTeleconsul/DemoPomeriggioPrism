@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:prism="http://prismlibrary.com"
+             prism:ViewModelLocator.AutowireViewModel="True"
+             x:Class="DemoPomeriggioPrism.Views.CreateUserPage">
+
+    <StackLayout>
+        <Entry Placeholder="Nome" Text="{Binding Name , Mode=TwoWay}"></Entry>
+        <Entry Placeholder="Job" Text="{Binding Job , Mode=TwoWay}"></Entry>
+        <Button Text="Conferma" Command="{Binding CreateUserCommand}" IsEnabled="{Binding IsEnabled}" ></Button>
+        <Label Text="{Binding ResponseSuccess}"></Label>
+    </StackLayout>
+</ContentPage>
