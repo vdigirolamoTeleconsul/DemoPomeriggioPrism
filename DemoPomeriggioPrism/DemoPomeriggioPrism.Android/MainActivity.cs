@@ -17,9 +17,11 @@ namespace DemoPomeriggioPrism.Droid
         {
             base.OnCreate(savedInstanceState);
 
-            AppCenter.Start("392f17fe-5bec-43df-b6b1-b3dc81efcc1d",
-                   typeof(Analytics), typeof(Crashes));
+            AppCenter.Start("android=392f17fe-5bec-43df-b6b1-b3dc81efcc1d;" +
+                  typeof(Analytics), typeof(Crashes));
 
+
+            Xamarin.Essentials.Platform.Init(this, savedInstanceState);
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
             LoadApplication(new App(new AndroidInitializer()));
         }
